@@ -54,7 +54,7 @@ yarn install
 
 Создайте файл `.env` в корне проекта:
 ```env
-
+```VITE_API_URL = 'https://68836e0321fa24876a9e147f.mockapi.io/api/sillswap'```
 ```
 
 4. **Запустите проект на локальной машине**
