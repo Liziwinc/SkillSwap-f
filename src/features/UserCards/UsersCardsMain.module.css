@@ -1,0 +1,36 @@
+.cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--clr-background);
+    box-sizing: border-box;
+    padding-top: 36px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.cards__container_new {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-block: 36px 60px;
+    padding-inline: 32px;
+    width: 100%;
+}
+
+.cards__container_more {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.btn__more {
+    align-self: end;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background: var(--clr-background);
+}

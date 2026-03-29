@@ -1,0 +1,114 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 32px;
+  color: var(--clr-primary);
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: var(--clr-primary);
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--clr-text);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.teamCard {
+  background: var(--clr-card-and-input);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.teamContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.teamName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: var(--clr-primary);
+}
+
+.teamCity {
+  font-size: 14px;
+  color: var(--clr-text);
+  opacity: 0.8;
+  margin: 0 0 12px 0;
+}
+
+.teamGithub {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: var(--clr-text);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.teamGithub:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--clr-accent);
+}
+
+.githubIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.testimonialCard {
+  background: var(--clr-card-and-input);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.testimonialText {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--clr-accent);
+}

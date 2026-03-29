@@ -1,0 +1,10 @@
+.moreImg {
+    padding-left: 10px;
+}
+
+.moreContainer {
+    color: var(--clr-accent);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+.container {
+    /*position: relative;*/
+    display: inline-block;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    /*margin-top: 10px;*/
+    z-index: 100;
+    min-width: 240px;
+    max-width: 98vw;
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 0;
+    /* Анимация по умолчанию */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px) scale(0.98);
+    transition: opacity 0.18s,
+    transform 0.18s;
+}
+
+/* Позиционирование */
+.dropdown.right {
+    right: 0;
+    left: auto;
+}
+
+.dropdown.left {
+    left: 0;
+    right: auto;
+}
+
+.dropdown.wide {
+    min-width: unset;
+    width: auto;
+    max-width: 100vw;
+    padding: 0;
+}
+
+/* Анимационные состояния */
+.dropdown.open {
+    width: 1136px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    padding: 60px;
+}
+
+.dropdown.close {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px) scale(0.98);
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    .dropdown,
+    .dropdown.wide {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%);
+        min-width: unset;
+        width: 98vw;
+        max-width: 98vw;
+    }
+}

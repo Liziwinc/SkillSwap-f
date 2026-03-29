@@ -1,0 +1,27 @@
+.profile-picture {
+  border-radius: 50%; 
+  object-fit: cover; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.profile-picture--small {
+  gap: var(--gap-mini);
+  width: 48px;
+  height: 48px;
+}
+
+.profile-picture--medium {
+  gap: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-picture--large {
+  gap: var(--gap-medium);
+  isolation: isolate;
+  width: 244px;
+  height: 244px;
+}

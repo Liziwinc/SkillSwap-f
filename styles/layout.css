@@ -1,0 +1,8 @@
+:root {
+    --gap-mini: 4px;
+    --gap-small: 12px;
+    --gap-medium: 20px;
+    --gap-large: 32px;
+    --padding-card: 24px;
+    --margin-layout: 60px;
+}

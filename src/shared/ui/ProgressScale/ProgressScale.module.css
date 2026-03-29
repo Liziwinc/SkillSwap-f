@@ -1,0 +1,42 @@
+.container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: var(--gap-small);
+ padding-bottom: 32px;
+}
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.steps {
+    font-size: 24px;
+    height: 28px;
+    margin: 0 auto;
+    color: var(--clr-text);
+    vertical-align: middle;
+    align-self: center;
+}
+
+.scale {
+    display: flex;
+    gap: 16px;
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.next {
+    background-color: var(--clr-disabled);
+}
+
+.done {
+    background-color: var(--clr-accent);
+}

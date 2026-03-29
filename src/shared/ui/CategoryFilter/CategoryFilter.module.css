@@ -1,0 +1,47 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdownButton {
+    display: none;
+    width: 24px;
+    transform: translateY(-5px);
+}
+
+.dropdown:hover .dropdownButton {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.dropdownButton .button {
+    color: green;
+}
+
+.category {
+    display: flex;
+}
+
+.categoryBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.subcategory {
+    padding-left: 32px;
+    overflow: hidden;
+}
+
+.subcategory .checkbox {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.subcategory .checkbox.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

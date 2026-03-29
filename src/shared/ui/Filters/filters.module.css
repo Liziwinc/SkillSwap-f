@@ -1,0 +1,12 @@
+.container {
+    width: 324px;
+    align-self: flex-start;
+    padding: 20px;
+    text-align: left;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,93 @@
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+  padding-bottom: 20px;
+}
+
+.card__info {
+    display: flex;
+    gap: var(--gap-small);
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+}
+
+.card__info_name {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -1.1%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.card__info_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-mini);
+    justify-content: start;
+}
+
+.card__info_text {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.card__skills {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+.card__skills_category {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skills_category_header {
+    font-family: inherit;
+    font-size: 16px;
+    line-height:  24px;
+    letter-spacing: 2%;
+    text-align: start;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills__category_skill {
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 12px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2%;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.skills__category_skill_more { 
+    background-color: var(--clr-tag-ect);
+}
+
+.skills__category_wrapper {
+    display: flex;
+    gap: var(--gap-mini);
+    justify-content: start;
+    align-items: center;
+}
+
+.like_btn__position {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

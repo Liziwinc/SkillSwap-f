@@ -1,0 +1,169 @@
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.control,
+.display {
+  width: 100%;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 12px 40px 12px 16px;
+  font-size: 16px;
+  color: #191917;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  outline: none;
+  transition: border 0.18s;
+  position: relative;
+}
+.control:focus,
+.display:focus {
+  border-color: #a6cd80;
+}
+.placeholder {
+  color: var(--clr-caption);
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  box-shadow: 0 4px 32px 0 rgba(31, 50, 81, 0.08);
+  z-index: 100;
+  padding: 16px 0;
+  max-height: 240px;
+  overflow-y: auto;
+  animation: fadeIn 0.17s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #191917;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.option:hover {
+  background: #f4f6f7;
+}
+.selected {
+  background: #f4f6f7;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #ced4da;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    border 0.15s,
+    background 0.15s;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+.option:hover .checkbox {
+  border: 1.5px solid #96c055;
+}
+.checked {
+  background: #eaf6e2;
+  border: 1.5px solid #96c055;
+}
+.checkbox svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.noOptions {
+  color: #b6b6b6;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+.search {
+  width: 94%;
+  margin: 0 3% 10px 3%;
+  padding: 7px 12px;
+  font-size: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  color: #191917;
+  outline: none;
+}
+
+.arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+  transition: transform 0.2s;
+  background: center / contain no-repeat;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L10 12L14 8' stroke='%23191917' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.control.small {
+  width: 218px;
+  height: 48px;
+  padding: 12px 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  border-radius: 12px;
+  border: 1px solid #69735d;
+}
+
+.control.large {
+  width: 460px;
+  height: 48px;
+  padding: 12px 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  border-radius: 12px;
+  border: 1px solid #69735d;
+}

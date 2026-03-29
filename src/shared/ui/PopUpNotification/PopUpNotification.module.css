@@ -1,0 +1,93 @@
+.notification {
+  display: flex;
+  padding: 24px;
+  padding-right: 34px;
+  background: var(--clr-button-hover);
+  border-radius: 12px;
+  max-width: 340px;
+  min-height: 72px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconLightbulb {
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.message {
+  max-width: 250px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  color: var(--clr-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.closeButton {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  height: 24px;
+  width: 24px;
+  right: 0;
+  top: 0;
+}
+
+.iconClose {
+  fill: var(--clr-text);
+  align-self: center;
+}
+
+.goToButton {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 74px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: transparent;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  background: transparent;
+  color: transparent;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
+}
+
+.notification:hover .goToButton {
+  color: var(--clr-text);
+  background: var(--clr-card-and-input);
+}

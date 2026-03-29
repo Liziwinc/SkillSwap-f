@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.customCalendar {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: var(--clr-card-and-input);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-self: center;
+  margin-top: 16px;
+}
+
+.cancelBtn, .selectBtn {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  min-width: 100px;
+  border: 1.5px solid var(--clr-accent);
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: var(--clr-text);
+  font-weight: 600;
+  text-align: center;
+  background: var(--clr-card-and-input, #FFF);
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+}
+
+.cancelBtn:hover,
+.selectBtn:hover {
+  background-color: var(--clr-accent, #ABD27A);
+}
+
+@media (max-width: 480px) {
+  .customCalendar {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .footer {
+    gap: 8px;
+  }
+
+  .cancelBtn, .selectBtn {
+    min-width: 120px;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .openBtn {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+.profileInput {
+  width: 218px;
+  height: 48px;
+  border: 1px solid var(--clr-caption, #69735d);
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}

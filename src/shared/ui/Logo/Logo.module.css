@@ -1,0 +1,9 @@
+.logo {
+  width: 159px;
+  display: flex;
+  gap: var(--gap-small);
+  align-items: center;
+  font-family: 'Jost', Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+}

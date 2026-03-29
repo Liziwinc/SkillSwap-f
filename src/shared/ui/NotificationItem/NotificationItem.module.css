@@ -1,0 +1,62 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.main {
+  flex: 1 1 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 306px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #253017;
+}
+
+.date {
+  color: #69735d;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.subText {
+  color: #253017;
+  letter-spacing: 0.24px;
+}
+
+.button {
+  align-self: flex-start;
+  width: fit-content;
+}

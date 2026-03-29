@@ -1,0 +1,264 @@
+
+/*  Страница */
+.page {
+  display: flex;
+  justify-content: center;
+  background: #f6f7f5;
+  padding: 32px 0 64px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Главный контейнер */
+.container {
+  width: 1368px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Две колонки одинаковой высоты */
+.topGrid {
+  display: grid;
+  grid-template-columns: 324px 1fr;
+  gap: 24px;
+  width: 1368px;
+  height: 444px;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+/* Карточки */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ===== Левая колонка (с именем Иван) ===== */
+.authorCard { padding: 24px 24px 28px; box-sizing: border-box; }
+
+.authorHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.authorAvatar {
+  width: 100px; height: 100px; border-radius: 50%; object-fit: cover;
+  grid-row: 1 / span 2;
+}
+.authorHeadText { display: flex; flex-direction: column; gap: 4px; }
+.authorName { font-size: 24px; line-height: 22px; font-weight: 500; }
+.authorMeta { font-size: 12px; line-height: 16px; color: #6b7280; white-space: pre-line; }
+
+
+.authorAbout {
+  margin: 16px 0 35px; 
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+
+/* Теги */
+.tagsRow { display: flex; gap: 8px; flex-wrap: wrap; }
+.nowrapRow { flex-wrap: nowrap; }
+.pill {
+  display: inline-flex; align-items: center;
+  height: 28px; padding: 0 12px; border-radius: 14px;
+  font-size: 12px; color: #253017; white-space: nowrap;
+}
+.pillTeach { background: #ebe5c5; }
+.pillLearn { background: #e8ecf7; }
+
+.tagsBlock { display: flex; flex-direction: column; gap: 35px; }
+.tagsGroup { display: flex; flex-direction: column; gap: 8px; }
+
+/* Заголовки «Может научить» и «Хочет научиться» слева */
+.authorCard .tagsLabel {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 34px !important;
+  letter-spacing: .02em;
+  color: #1A1A1A;
+}
+.tagsLabel {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: .02em;
+  color: #1A1A1A;
+}
+
+.previewCard { box-sizing: border-box; }
+
+
+/* Похожие предложения  */
+.suggestionsTitle {
+  font-family: 'Jost', sans-serif;
+  font-size: 24px !important;
+  line-height: 28px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.011em;
+  color: #253017;
+  margin: 5 !important;
+  display: block;
+  transform: translate(4px, 9px);
+  will-change: transform;
+}
+
+
+.cardsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 324px);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.cardCol { display: flex; flex-direction: column; }
+
+.suggestCard {
+  width: 324px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  padding-bottom: 76px;
+  min-height: 368px;
+}
+
+.suggestCard > img:first-of-type {
+  width: 100%; height: 180px; object-fit: cover; border-radius: 12px;
+  display: block; margin-bottom: 12px;
+}
+.suggestCard > :first-child img {
+  width: 100% !important; height: 180px !important;
+  object-fit: cover !important; border-radius: 12px !important; display: block !important;
+}
+.suggestCard > :first-child { border-radius: 12px; overflow: hidden; }
+.suggestCard :global(.card__info) { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; }
+.suggestCard :global(.card__info img),
+.suggestCard img[alt^="аватар"],
+.suggestCard img[alt*="аватар"],
+.suggestCard :where(.card__info) :where(img, picture img) {
+  width: 100px !important; height: 100px !important; border-radius: 50% !important; object-fit: cover !important; flex: 0 0 auto;
+}
+.suggestCard :global(.card__skills) { margin-top: auto; }
+
+
+
+@media (max-width: 1440px) {
+  .page { padding: 24px 0 48px; }
+}
+
+.suggestCard {
+  width: 324px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;             
+  flex-direction: column;    
+  gap: 12px;
+  position: relative;
+}
+
+.cardFooter {
+  margin-top: auto;         
+}
+
+.cardFooter :where(button, a) {
+  width: 100%;              
+}
+
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { margin: 0; }
+
+
+.container { width: 1368px; margin: 0 auto; }
+.topGrid {
+  width: 1368px;
+  height: 444px;
+  display: grid;
+  grid-template-columns: 324px 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.authorCard { padding: 24px 24px 28px; }
+
+
+:root {
+  --body-fs: 16px;
+  --body-lh: 20px;
+}
+.authorAbout {
+  font-size: var(--body-fs);
+  line-height: var(--body-lh);
+}
+
+
+.suggestionsTitle{
+  font-family: 'Jost', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: -0.011em;
+  color: #253017;
+  margin: 0 0 16px; 
+}
+
+.tagsLabel,
+.authorCard .tagsLabel{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .02em;
+  color: #1A1A1A;
+}
+
+.pill{ height: 28px; padding: 0 12px; border-radius: 14px; }
+.tagsRow{ gap: 8px; }
+.tagsBlock{ gap: 24px; } 
+
+.previewCard :global(.right){
+  grid-template-columns: minmax(260px, 1fr) 72px !important;
+  grid-auto-rows: 72px !important;
+  gap: 24px !important;
+}
+.previewCard :global(.mainImage){
+  min-height: 280px !important;
+  border-radius: 12px !important;
+}
+
+.cardsRow{
+  display: grid;
+  grid-template-columns: repeat(4, 324px);
+  gap: 24px;
+}
+
+.suggestCard{
+  width: 324px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cardFooter{ margin-top: auto; }
+.cardFooter :where(button, a){ width: 100%; }

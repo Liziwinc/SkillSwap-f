@@ -1,0 +1,27 @@
+.notificationBell {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.notificationBell svg {
+    width: 24px;
+    height: 24px;
+}
+
+.notificationBell:hover {
+    opacity: 0.6;
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: var(--clr-alarm);
+    border-radius: 50%;
+}

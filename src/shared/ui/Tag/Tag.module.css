@@ -1,0 +1,13 @@
+.tag {
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 12px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2%;
+  margin: 0;
+  box-sizing: border-box;
+}

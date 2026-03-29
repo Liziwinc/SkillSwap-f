@@ -1,0 +1,22 @@
+:root {
+  --clr-text: #253017;
+  --clr-caption: #69735D;
+  --clr-disabled-text: #9CA197;
+  --clr-toggle: #B2B9A9;
+  --clr-disabled: #E4E8DF;
+  --clr-card-and-input: #FFFFFF;
+  --clr-text-link-and-button-pressed: #508826;
+  --clr-accent: #ABD27A;
+  --clr-button-hover: #DEEBC5;
+  --clr-background: #F9FAF7;
+  --clr-alarm: #E0796E;
+  --clr-error: #BF3920;
+  --clr-tag-business: #EEE7F7;
+  --clr-tag-arts: #F7E7F2;
+  --clr-tag-languages: #EBE5C5;
+  --clr-tag-education: #E7F2F6;
+  --clr-tag-home: #F7EBE5;
+  --clr-tag-health: #E9F7E7;
+  --clr-tag-ect: #E8ECF7;
+  --clr-accent-rgb: 171, 210, 122;
+}

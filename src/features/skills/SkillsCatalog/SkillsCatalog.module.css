@@ -1,0 +1,6 @@
+.skillsCatalog {
+  column-gap: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  column-width: 488px; 
+}

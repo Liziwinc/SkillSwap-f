@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "name": "Бизнес и карьера",
+    "icon": "../assets/skills_icons/business_career.svg",
+    "skills": [
+      { "id": "team_management", "name": "Управление командой" },
+      { "id": "marketing_and_advertising", "name": "Маркетинг и реклама" },
+      { "id": "sales_and_negotiations", "name": "Продажи и переговоры" },
+      { "id": "personal_brand", "name": "Личный бренд" },
+      { "id": "resume_and_interview", "name": "Резюме и собеседование" },
+      { "id": "time_management", "name": "Тайм_менеджмент" },
+      { "id": "project_management", "name": "Проектное управление" },
+      { "id": "entrepreneurship", "name": "Предпринимательство" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Творчество и искусство",
+    "icon": "../assets/skills_icons/art.svg",
+    "skills": [
+      { "id": "drawing_and_illustration", "name": "Рисование и иллюстрация" },
+      { "id": "photography", "name": "Фотография" },
+      { "id": "video_editing", "name": "Видеомонтаж" },
+      { "id": "music_and_sound", "name": "Музыка и звук" },
+      { "id": "acting", "name": "Актёрское мастерство" },
+      { "id": "creative_writing", "name": "Креативное письмо" },
+      { "id": "art_therapy", "name": "Арт-терапия" },
+      { "id": "decor_and_diy", "name": "Декор и DIY" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Иностранные языки",
+    "icon": "../assets/skills_icons/languages.svg",
+    "skills": [
+      { "id": "english", "name": "Английский" },
+      { "id": "spanish", "name": "Испанский" },
+      { "id": "french", "name": "Французский" },
+      { "id": "german", "name": "Немецкий" },
+      { "id": "chinese", "name": "Китайский" },
+      { "id": "japanese", "name": "Японский" },
+      {
+        "id": "exam_preparation",
+        "name": "Подготовка к экзаменам (IELTS, TOEFL)"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Образование и развитие",
+    "icon": "../assets/skills_icons/education.svg",
+    "skills": [
+      { "id": "personal_development", "name": "Личностное развитие" },
+      { "id": "learning_skills", "name": "Навыки обучения" },
+      { "id": "cognitive_techniques", "name": "Когнитивные техники" },
+      { "id": "speed_reading", "name": "Скорочтение" },
+      { "id": "teaching_skills", "name": "Навыки преподавания" },
+      { "id": "coaching", "name": "Коучинг" }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Дом и уют",
+    "icon": "../assets/skills_icons/house.svg",
+    "skills": [
+      { "id": "cleaning_and_organization", "name": "Уборка и организация" },
+      { "id": "home_finance", "name": "Домашние финансы" },
+      { "id": "cooking", "name": "Приготовление еды" },
+      { "id": "house_plants", "name": "Домашние растения" },
+      { "id": "repair", "name": "Ремонт" },
+      { "id": "storage_things", "name": "Хранение вещей" }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Здоровье и лайфстайл",
+    "icon": "../assets/skills_icons/health_lifestyle.svg",
+    "skills": [
+      { "id": "yoga_and_meditation", "name": "Йога и медитация" },
+      { "id": "nutrition_and_healthy_lifestyle", "name": "Питание и ЗОЖ" },
+      { "id": "mental_health", "name": "Ментальное здоровье" },
+      { "id": "mindfulness", "name": "Осознанность" },
+      { "id": "physical_training", "name": "Физические тренировки" },
+      { "id": "sleep_and_recovery", "name": "Сон и восстановление" },
+      { "id": "work_life_balance", "name": "Баланс жизни и работы" }
+    ]
+  }
+]

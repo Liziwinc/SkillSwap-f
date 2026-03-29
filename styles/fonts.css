@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 2%;
+  color: var(--clr-text);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -1.1%;
+  color: var(--clr-text);
+}
+
+h2 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -1.1%;
+  color: var(--clr-text);
+}
+
+h3 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -1.1%;
+  color: var(--clr-text);
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 2%;
+  color: var(--clr-text);
+}
+
+.caption {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 2%;
+  color: var(--clr-caption);
+}

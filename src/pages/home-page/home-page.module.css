@@ -1,0 +1,20 @@
+.page {
+  display: flex;
+  background: var(--clr-background);
+  padding-inline: 36px;
+}
+
+.aside {
+  display: flex;
+  background: var(--clr-card-and-input);
+  margin: 32px 24px 0 0;
+  border-radius: 12px;
+  height: auto;
+  align-self: flex-start;
+  max-width: 324px;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+}

@@ -1,0 +1,136 @@
+.header {
+    position: relative;
+    display: flex;
+    gap: var(--gap-large);
+    align-items: center;
+    padding: 36px 36px 20px 36px;
+    background: var(--clr-background);
+}
+
+.navMenu {
+    display: flex;
+    gap: 24px;
+}
+
+.navList {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem {
+    list-style: none;
+    white-space: nowrap;
+}
+
+.navLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navLink:hover {
+    color: var(--clr-accent);
+}
+
+.activeNavLink {
+    color: var(--clr-accent);
+}
+
+.navLink:hover svg {
+    fill: var(--clr-accent);
+}
+.activeNavLink svg {
+    fill: var(--clr-accent);
+}
+
+.navLinkWithIcon {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-mini);
+    cursor: pointer;
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.authWrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.userActions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconsWrapper {
+    display: flex;
+    gap: var(--gap-medium);
+    align-items: center;
+}
+
+.logoLink {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.avatarWrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.logoLink:hover {
+    text-decoration: none;
+}
+
+.logoLink:visited {
+    color: inherit;
+}
+
+.logoLink:focus {
+    outline: none;
+}
+
+.dropdownCatalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.registrationActions {
+    margin-left: auto;
+}
+
+.dropdownPanelBase {
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    padding: 0 !important;
+}
+
+.userMenuDropdown,
+.userMenuDropdown.open,
+.userMenuDropdown.wide {
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    padding: 0 !important;
+    right: 36px !important;
+}
+
+.notificationDropdown,
+.notificationDropdown.open,
+.notificationDropdown.wide {
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    padding: 0 !important;
+    right: 314px !important;
+}

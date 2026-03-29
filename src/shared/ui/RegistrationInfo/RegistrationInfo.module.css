@@ -1,0 +1,28 @@
+.info {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.imgContainer {
+    width: 556px;
+    height: 692px;
+    background-color: var(--clr-card-and-input);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px; 
+    flex-direction: column;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto ;
+}
+
+.description {
+    text-align: center;
+    padding: 12px 60px;
+}

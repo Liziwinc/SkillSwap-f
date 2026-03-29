@@ -1,0 +1,1 @@
+export { FirstStepRegistration } from './FirstStepRegistration';
